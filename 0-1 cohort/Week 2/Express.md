@@ -48,6 +48,7 @@
 - Look about the middlewares, you can create your own middlewares.
 - Default response code is 200
   ![alt text](Express-Img/image-9.png)
+- If you don't write anything in require it automatically imports index
 
 ## FS Server
 
@@ -57,3 +58,8 @@
   ![alt text](Express-Img/image-11.png)
 - Remote file getter
   ![alt text](Express-Img/image-12.png)
+
+## App.use()
+
+![alt text](image.png)
+![alt text](image-1.png)

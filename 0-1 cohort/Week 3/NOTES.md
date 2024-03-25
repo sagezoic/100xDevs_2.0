@@ -40,6 +40,8 @@
 - Here the below app.use will be called after the request is processed and if we get any error then the error middleware will be called. If error comes no more middlewares will be called and control reaches the global catch.
   ![alt text](img-3.1/image-25.png)
 - Look for the use of next() in the route handler?
+- Use of middleware:
+  ![alt text](image.png)
 
 ## Global Catch
 
@@ -175,6 +177,11 @@ app.listen(3000)
 
 ## Databases
 
+- The need of Express in between browser and DB is:
+  - Browser can't directly talk with the DB
+  - DB can't give access to specific info rather it give complete access to DB, we want to restrict this access. (I doubt about this point you can give VIEWS to specific users to show info but this way is not so scalable).
+  - But there are certain DB like firebase which gives you granule access.
+  - So, Servers are there to do authentication checks and do some operations
 - ![alt text](img-3.2/image-4.png)
 
 ## MongoDB
