@@ -36,3 +36,84 @@
 - Look into it
 
 ## Monaco Code Editor React
+
+# Lec 2 - Typescript
+
+## Introduction
+
+- Typescript is just an syntactical language which converts down to js.
+- Typescript is a strictly typed language
+- If you write typescript it never runs at all.
+- Typescript it never run by your browser cuz it can't understand that it can understand javascript
+- Typescript code is transpiled into js code by typescript compiler (tsc).
+- tsc ensures there is no type error in your code.
+- `tsc init` or `npx tsc --init` to initiate a tx file
+- `tsconfig.json` is the config file for the ts configuration
+- to convert your ts file to js file: `tsc -b`
+- `use strict` is something which js makes your code little more strict
+
+## Variables
+
+- Type inference: If we add two numbers then the return type will also be a number.
+-
+
+## TSConfig.json
+
+- Here you can make changes and according to that your js build will change
+- You can write code in new syntax of TS and using `target` key in `tsconfig` the tsc will convert it to the older versions of ECMAScript.
+- All inputs reside in `src` folder(ts) and all output `dist` or `build` folder (js) to make code maintainable.
+- `rootDir: "./src"`, `outDir: "./dist"`
+- The function type is supposed to return nothing as I used 'void' but it returns a string with no problems. No errors on the compiler, why?
+
+```
+type FunctionType = (arg0: string) => void;
+
+let randomFunc: FunctionType = (name) => {
+  return name.toLowerCase()
+};
+```
+
+And is it the same reason here or is something else going on?
+
+```
+type Bike = {
+  pedal: () => void;
+}
+
+let myBike: Bike = {
+  pedal() {
+    console.log('Im cycling!')
+    return 4;
+  }
+}
+```
+
+Have a look at this: https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions
+
+- FUN TIP: If you want to only allow one login you can store the JWT Token in the DB and revoke the other one and this way only one device will keep logged in.
+
+## Interface
+
+- It has a multiple types clubbed together
+- With interface you can create classes but types won't let you that.
+- Interfaces can be implemented as a classes whereas types can't
+
+## Types
+
+- Very similar to `interfaces`, types lets you `aggregate` data together.
+- Types and Interface are similar in sense they both lets you aggregate data
+  ![alt text](image.png)
+- You can use unions and intersection operation with the types. When you know that it will be one of the both or intersection then use type. If the property repeats then it is considered only once.
+- array type is only possible with type not with the interface.
+- `type a = interface a | interface b` allowed
+
+## Turborepo
+
+## Enums
+
+- ![alt text](image-1.png)
+- You can also access these enums using 0,1,2,3,..
+
+## Generics
+
+- ![alt text](image-2.png)
