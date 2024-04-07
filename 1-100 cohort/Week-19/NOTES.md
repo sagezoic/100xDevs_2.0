@@ -11,6 +11,7 @@
 - Asynchronous Communication
   - When one system doesn't directly talk with other system or doesn't wait for the response
   - Eg.Messaging queues, Pub subs, Server-send events
+  - Sendgrid: email service, Twilio: SMS service
 
 ### Websockets
 
