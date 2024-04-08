@@ -38,3 +38,12 @@
 - You can even serve your whole computer over network using the serve library
 
 ## Deploying Frontend on AWS
+
+## Connection Pooling
+
+- If you want to deploy prisma to cloudflare workers you have to do few things, first don't include the engine dependency from the prisma dependency and maintain a connection pool and connect your worker to this connection pool rather than connecting it to the DB directly.
+  ![alt text](image-1.png)
+- To do connection pooling prisma you have to use their service called prisma accelerate
+- Whatever the variables that will be used in index.ts those will be in wrangler.toml and which will be used in cli they will be in `.env` file.
+- Whenever you are creating a env variable in the wrangler.toml use `[vars]` in starting
+  ![alt text](image-2.png)
