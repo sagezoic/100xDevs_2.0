@@ -111,3 +111,9 @@
   browser specific functions. There is a slight delay when changes propagates from virtual DOM to real DOM.
 - Read about webSockets vs http
 - What is recoil in React?
+
+## Typescript
+
+- In typescript void is not strict type
+- with void type widening happens. That is why the below code doesn't throw any error you can try the code with the number type it will throw error.
+  ![alt text](image-1.png)

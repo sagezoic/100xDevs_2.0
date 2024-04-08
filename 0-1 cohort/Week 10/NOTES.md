@@ -32,7 +32,9 @@
 - ![alt text](img/image-19.png)
 - Problems with writting raw queries
   ![alt text](img/image-20.png)
--
+- Free online DB: postgress:
+  - https://aiven.io/
+  - https://console.neon.tech/
 
 ## Types of ORM
 
