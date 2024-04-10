@@ -41,3 +41,21 @@
 - Sticky Connection: Sharding the connection means you will connect a server doesn't belong from where you are connecting. In sticky connection all the connection for a room connects to a single web socket server.
 - Non-Sticky connection
   ![alt text](img/image-6.png)
+
+### WebRTC
+
+- Can happen over UDP/ TCP.
+- Benefit of using UDP over TCP in webRTC it happens faster but few events get lost.
+
+## Assignment
+
+- How can you statically generate dynamic routes on nextJS server, it will make the client pages load fast
+
+## Redis, Pub-Subs and Messaging Queue
+
+- Pub-Subs and Messaging Queue are always used for backend to backend communication
+- Leetcode uses pooling to check if submission gets success/ failed the better approach to solve the problem could have been using websocket.
+- We need pub-sub cuz we can have distributed servers and in that case our worker need to check which server send the request
+
+### Redis
+- It is a message broker and storage
