@@ -58,4 +58,30 @@
 - We need pub-sub cuz we can have distributed servers and in that case our worker need to check which server send the request
 
 ### Redis
+
 - It is a message broker and storage
+- Transcoding is an expensive operation
+- You should never use Redis as your primary database
+- Redis is aggressively used for caching data to minimize the number of database calls.
+- Redis provide in-memory storage
+- Redis supports distributed caching
+- ![alt text](image.png)
+- You can only store strings in the Redis
+
+#### Restoring State in Redis
+
+- Append in file
+- Snapshot
+- ![alt text](image-1.png)
+  Answer is option 1
+
+### Hash Set/ Get
+
+- HSET
+- HGET
+
+### BRPOP (Block Right POP)
+
+- `BRPOP problems 0` It will wait for the push for infinite time (0 signifies infinite wait)
+- `BRPOP problems 5` It will wait for 5 seconds
+-
