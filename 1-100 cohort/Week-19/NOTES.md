@@ -59,7 +59,7 @@
 
 ### Redis
 
-- It is a message broker and storage
+- It is a message broker and storage/ pub sub/ queuing
 - Transcoding is an expensive operation
 - You should never use Redis as your primary database
 - Redis is aggressively used for caching data to minimize the number of database calls.
