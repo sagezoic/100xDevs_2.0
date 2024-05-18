@@ -67,6 +67,7 @@
 - Redis supports distributed caching
 - ![alt text](image.png)
 - You can only store strings in the Redis
+- Redis runs on a single thread
 
 #### Restoring State in Redis
 
